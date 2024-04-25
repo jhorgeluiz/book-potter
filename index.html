@@ -33,7 +33,7 @@
             height: 190px;
             background-color: black;
             box-shadow: 1px 1px 5px black;
-            border: 25px solid rgb(189, 188, 188);
+            border: 25px solid #740002b9;
             border-bottom-left-radius: 30px;
         }
     
@@ -76,6 +76,11 @@
             border-style: none;
             border-radius: 50px;
         }
+
+        img {
+            width: 200px;
+            height: 190px;
+        }
         
         
     </style>
@@ -90,11 +95,11 @@
 
         <select name="pokemon" id="ipoke">
             <option value="" id="ipoke">Selecione o Personagem</option>
-            <option value="pikachu" id="ipoke"></option>
-            <option value="bulbossauro" id="ipoke">bulbossauro</option>
-            <option value="charizard" id="ipoke">charizard</option>
-            <option value="esguitaruga" id="ipoke">esguitaruga</option>
-            <option value="pidgey" id="ipoke">pidgey</option>
+            <option value="walter" id="iwalter">tio walter</option>
+            <option value="" id=""></option>
+            <option value="" id=""></option>
+            <option value="" id=""></option>
+            <option value="" id="e"></option>
             
         </select>
 
@@ -109,13 +114,13 @@
         function enviar() {
             let camp = document.getElementById('ipoke').value
             let res = document.getElementById('res')
-            let p = 'pikachu'
+            let p = 'walter'
             let b = 'bulbossauro'
             let c = 'charizard'
             let e = 'esguitaruga'
             let pi = 'pidgey'
             if(camp === p) {
-                res.innerHTML = `<img src="imagens/pikachu.png" alt=""> `                 
+                res.innerHTML = `<img src="imagens/valter_dursley.jpg" alt=""> `                 
             }
 
             if(camp === b) {
