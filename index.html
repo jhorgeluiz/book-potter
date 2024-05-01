@@ -23,7 +23,7 @@
             height: 600px;      
         }
        
-        div {   /* resultado */
+        #res {   /* resultado */
             margin-top: 20px;
             position: relative;
             left: 25px;
@@ -33,6 +33,19 @@
             box-shadow: 1px 1px 5px black;
             border: 10px solid #740002b9;
             border-radius: 30px;
+        }
+
+        p {    /* paragrafo de informações */
+            color: yellow;
+            margin-top: 10px;
+            position: relative;
+            left: 25px;
+            width: 280px;
+            height: 150px;
+            background-color: black;
+            box-shadow: 1px 1px 5px black;
+            border: 10px solid #740002b9;
+            
         }
     
         .tituloh1 {
@@ -77,6 +90,9 @@
             position: relative;
             bottom: 3px;
         }
+        .enviar:active {
+            background-color: #310606b9;
+        }
 
         img {    /* todas */
             border-radius: 15px;
@@ -96,7 +112,7 @@
         <h1 class="tituloh1">Catalogo de Personagens</h1>
 
         <select name="Personagem" id="person">
-            <option>Selecione o Personagem</option>
+            <option value="selecione" id="person">Selecione o Personagem</option>
             <option value="alastor">Alastor Moody</option>
             <option value="alvo">Albus Dumbledore</option>
             <option value="argo">Argo Filch</option>
@@ -170,6 +186,9 @@
         <div id="res">
             
         </div>
+        <div id="info">
+            
+        </div>
     </section>
 
    
@@ -177,6 +196,7 @@
         function enviar() {
             let camp = document.getElementById('person').value
             let res = document.getElementById('res')
+            let selecione = 'selecione'
             let alastor = 'alastor'
             let alvo ="alvo"
             let argo ="argo"
@@ -243,8 +263,14 @@
             let vitor ="vitor"
             let wood ="wood"
            
+            if(camp === selecione) {
+                res.innerHTML = ''
+                info.innerHTML = ''              
+            }
+
             if(camp === alastor) {
-                res.innerHTML = `<img src="imagens/alastor300.png" alt=""> `                 
+                res.innerHTML = `<img src="imagens/alastor300.png" alt=""> `
+                info.innerHTML = `<p>Nome: Alastor Moody <br>  </p>`                 
             }
 
             if(camp === alvo) {
