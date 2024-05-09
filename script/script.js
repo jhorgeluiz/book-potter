@@ -76,35 +76,42 @@ function enviar() {
 
     if(camp === alastor) {
         res.innerHTML = `<img src="imagens/alastor300.png" alt=""> `
-        info.innerHTML = `<p>Nome: Alastor Moody <br>  </p>`                 
+        info.innerHTML = `<p>Nome: Alastor Moody <br> Nascimento: 08/03/ <br> Morte: 27/07/1997<br>Estado sanguíneo: Puro-Sangue</p>`                 
     }
 
     if(camp === alvo) {
-        res.innerHTML = `<img src="imagens/alvo300.png" alt="">`                 
+        res.innerHTML = `<img src="imagens/alvo300.png" alt="">`
+        info.innerHTML = `<p>Nome: Albus Percival Wulfrico Brian Dumbledore <br> Nascimento: 21/08/1881 <br> Morte: 30/06/1997<br>Estado sanguíneo: Mestiço <br> Casa: Grifinoria </p>`                  
     }
 
     if(camp === argo) {
-        res.innerHTML = `<img src="imagens/argo300.png" alt="">`                 
+        res.innerHTML = `<img src="imagens/argo300.png" alt="">`
+        info.innerHTML = `<p>Nome: Argo Filch <br> Nascimento: 1956 <br> Estado sanguíneo: Aborto</p>`                 
     }
 
     if(camp === arthur) {
-        res.innerHTML = `<img src="imagens/arthur300.png" alt="">`                 
+        res.innerHTML = `<img src="imagens/arthur300.png" alt="">`
+        info.innerHTML = `<p>Nome: Arthur Weasley<br> Nascimento: 06/02/1950 <br> Estado sanguíneo: Puro-Sangue <br> Casa: Grifinoria</p>`                 
     }
 
     if(camp === bartor) {
-        res.innerHTML = `<img src="imagens/bartor300.png" alt="">`                 
+        res.innerHTML = `<img src="imagens/bartor300.png" alt="">`
+        info.innerHTML = `<p>Nome: Bartolomeu Crouch Sênior <br> Nascimento: Desconhecido <br> Morte: 27/05/1995 <br> Estado sanguíneo: Puro-Sangue </p>`                 
     }
 
     if(camp === bartorjr) {
-        res.innerHTML = `<img src="imagens/bartorjr.png" alt="">`                 
+        res.innerHTML = `<img src="imagens/bartorjr.png" alt="">`
+        info.innerHTML = `<p>Nome: Bartolomeu Crouch Junior <br> Nascimento: 1962 <br> Morte: 24/06/1995 <br> Estado sanguíneo: Puro-Sangue </p>`                 
     }
 
     if(camp === belatrix) {
-        res.innerHTML = `<img src="imagens/belatrix300.png" alt="">`                 
+        res.innerHTML = `<img src="imagens/belatrix300.png" alt="">`
+        info.innerHTML = `<p>Nome: Bellatrix Lestrange <br> Nascimento: 1951 <br> Morte: 02/05/1998 <br> Estado sanguíneo: Puro-Sangue <br> Casa: Sonserina</p>`                 
     }
 
     if(camp === carlinhos) {
-        res.innerHTML = `<img src="imagens/carlinho300.png" alt="">`                 
+        res.innerHTML = `<img src="imagens/carlinho300.png" alt="">`
+        info.innerHTML = `<p>Nome: Carlinhos Weasley <br> Nascimento: 12/12/1972 <br> Estado sanguíneo: Puro-Sangue <br> Casa: Grifinoria </p> `                 
     }
 
     if(camp === cedrico) {

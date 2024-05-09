@@ -15,7 +15,7 @@ section{margin: auto;
     position: relative;
     box-shadow: 1px 1px 5px black;
     width: 350px; 
-    height: 600px;      
+    height: 620px;      
 }
 
 #res {   /* resultado */
@@ -30,16 +30,19 @@ section{margin: auto;
     border-radius: 30px;
 }
 
-p {    /* paragrafo de informações */
-    color: yellow;
+#info {    /* paragrafo de informações */
     margin-top: 10px;
     position: relative;
     left: 25px;
     width: 280px;
-    height: 150px;
+    height: 120px;
     background-color: black;
     box-shadow: 1px 1px 5px black;
     border: 10px solid #740002b9;
+}
+p {
+    color: yellow;
+    margin: 5px;
 }
 
 .tituloh1 {
