@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'harry';
+    src: url('../HARRYP__.TTF') format('truetype');
+}
+
+body{
+    background-image: url(../imagens/fundo3.jpg);
+    background-position: center;
+}
+
+section{margin: auto;
+    display: block;
+    position: relative;
+    box-shadow: 1px 1px 5px black;
+    width: 350px; 
+    height: 600px;      
+}
+
+#res {   /* resultado */
+    margin-top: 20px;
+    position: relative;
+    left: 25px;
+    width: 280px;
+    height: 300px;
+    background-color: black;
+    box-shadow: 1px 1px 5px black;
+    border: 10px solid #740002b9;
+    border-radius: 30px;
+}
+
+p {    /* paragrafo de informações */
+    color: yellow;
+    margin-top: 10px;
+    position: relative;
+    left: 25px;
+    width: 280px;
+    height: 150px;
+    background-color: black;
+    box-shadow: 1px 1px 5px black;
+    border: 10px solid #740002b9;
+}
+
+.tituloh1 {
+    background-color: #740002b9;
+    color: yellow;
+    box-shadow: 1px 2px 5px black;
+    border-radius: 5px;
+    font-family: 'harry';
+    text-align: center;
+    margin-top: 0px;
+    padding: 5px;
+    font-size: 40px;
+    position: relative;
+    top: 10px;
+}
+
+select {
+    font-family: 'harry';
+    font-size: 29px;
+    background-color: #740002b9;
+    color: antiquewhite;
+    margin-left: 25px;
+    width: 225px;
+    height: 40px;
+    box-shadow: 1px 2px 5px black;
+    border-radius: 5px;
+    border-style: none;
+    color: yellow;
+}
+
+.enviar{
+    background-color: #740002b9;
+    color: yellow;
+    font-family: 'harry';
+    font-size: 20px;
+    margin-left: 8px;
+    width: 65px;
+    height: 40px;
+    box-shadow: 1px 2px 5px black;
+    border-style: none;
+    border-radius: 5px;
+    position: relative;
+    bottom: 3px;
+}
+.enviar:active {
+    background-color: #310606b9;
+}
+
+img {    /* todas */
+    border-radius: 15px;
+    width: 280px;
+    height: 300px;
+}
