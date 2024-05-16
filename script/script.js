@@ -115,71 +115,88 @@ function enviar() {
     }
 
     if(camp === cedrico) {
-        res.innerHTML = `<img src="imagens/cedrico300.png" alt="">`                 
+        res.innerHTML = `<img src="imagens/cedrico300.png" alt="">`
+        info.innerHTML = `<p>Nome: Cedrico Diggory <br> Nascimento: 01/09/1977 <br> Morte: 24/06/1995 <br> Estado sanguíneo: Puro-Sangue <br> Casa: Lufa-Lufa </p> `                  
     }
 
     if(camp === cho) {
-        res.innerHTML = `<img src="imagens/cho300.png" alt="">`                 
+        res.innerHTML = `<img src="imagens/cho300.png" alt="">`
+        info.innerHTML = `<p>Nome: Cho Chang <br> Nascimento: 1979 <br> Estado sanguíneo: Mestiço <br> Casa: Corvinal </p> `                  
     }
 
     if(camp === colin) {
-        res.innerHTML = `<img src="imagens/colin300.png" alt="">`                 
+        res.innerHTML = `<img src="imagens/colin300.png" alt="">`
+        info.innerHTML = `<p>Nome: Colin Creevey Nascimento: 03/08/1981 <br> Morte: 24/06/1998 <br> Estado sanguíneo: Nascido Trouxa <br> Casa: Grifinoria </p> `                 
     }
 
     if(camp === Crabbe) {
-        res.innerHTML = `<img src="imagens/crab300.png" alt="">`                 
+        res.innerHTML = `<img src="imagens/crab300.png" alt="">`
+        info.innerHTML = `<p>Nome: Vicent Crabbe <br> Nascimento: 01/09/1979 <br> Morte: 02/05/1998 <br> Estado sanguíneo: Puro-Sangue <br> Casa: Sonserina </p> `                 
     }
 
     if(camp === dino) {
-        res.innerHTML = `<img src="imagens/dino300.png" alt="">`                 
+        res.innerHTML = `<img src="imagens/dino300.png" alt="">`
+        info.innerHTML = `<p>Nome: Dino Thomas <br> Nascimento: 08 de Dezembro <br> Estado sanguíneo: Mestiço <br> Casa: Grifinoria </p> `                 
     }
 
     if(camp === doby) {
-        res.innerHTML = `<img src="imagens/doby300.png" alt="">`                 
+        res.innerHTML = `<img src="imagens/doby300.png" alt="">`
+        info.innerHTML = `<p>Nome: Dobby <br> Nascimento: 28 de junho <br> Morte: março de 1998 <br> Estado sanguíneo: Elfo-Domestico </p> `                 
     }
 
     if(camp === dolores) {
-        res.innerHTML = `<img src="imagens/dolores.png" alt="">`                 
+        res.innerHTML = `<img src="imagens/dolores.png" alt="">`
+        info.innerHTML = `<p>Nome: Dolores Umbridge <br> Nascimento: 26/08/1961 <br> Estado sanguíneo: Mestiço <br> Casa: Sonserina </p> `                 
     }
 
     if(camp === draco) {
-        res.innerHTML = `<img src="imagens/draco300.png" alt="">`                 
+        res.innerHTML = `<img src="imagens/draco300.png" alt="">`
+        info.innerHTML = `<p>Nome: Draco Malfoy <br> Nascimento: 05/06/1980 <br> Estado sanguíneo: Puro-Sangue <br> Casa: Sonserina </p> `                 
     }
 
     if(camp === duda) {
-        res.innerHTML = `<img src="imagens/duda300.png" alt="">`                 
+        res.innerHTML = `<img src="imagens/duda300.png" alt="">`
+        info.innerHTML = `<p>Nome: Duda Dursley <br> Nascimento: 23/06/1980 <br> Estado sanguíneo: Trouxa </p> `                 
     }
 
     if(camp === ernesto) {
-        res.innerHTML = `<img src="imagens/ernesto300.png" alt="">`                 
+        res.innerHTML = `<img src="imagens/ernesto300.png" alt="">`
+        info.innerHTML = `<p>Nome: Ernesto Prang (Motorista) <br> Nascimento: Desconhecido <br> Morte: Desconhecido <br> Estado sanguíneo: Desconhecido <br> Casa: Grifinoria </p>`                 
     }
 
     if(camp === fenrir) {
-        res.innerHTML = `<img src="imagens/fenrir300.png" alt="">`                 
+        res.innerHTML = `<img src="imagens/fenrir300.png" alt="">`
+        info.innerHTML = `<p>Nome: Fenrir Greyback <br> Nascimento: 1945 <br> Morte: Desconhecido <br> Estado sanguíneo: Mestiço </p>` 
     }
 
     if(camp === filius) {
-        res.innerHTML = `<img src="imagens/filius.png" alt="">`                 
+        res.innerHTML = `<img src="imagens/filius.png" alt="">`
+        info.innerHTML = `<p>Nome: Filius <br> Nascimento: 17/10/1958 <br> Estado sanguíneo: Meio-Duente <br> Casa: Corvinal </p>`                  
     }
 
     if(camp === fleur) {
-        res.innerHTML = `<img src="imagens/fleur300.png" alt="">`                 
+        res.innerHTML = `<img src="imagens/fleur300.png" alt="">`
+        info.innerHTML = `<p>Nome: Fleur Isabelle Weasley <br> Nascimento: 30/10/1977 <br> Estado sanguíneo: Meio-Humano (um quato veela) </p>`                  
     }
 
     if(camp === flitwink) {
-        res.innerHTML = `<img src="imagens/flitwink300.png" alt="">`                 
+        res.innerHTML = `<img src="imagens/flitwink300.png" alt="">`
+        info.innerHTML = `<p>Nome: Filius <br> Nascimento: 17/10/1958 <br> Estado sanguíneo: Meio-Duente <br> Casa: Corvinal </p>`                 
     }
 
     if(camp === fred) {
-        res.innerHTML = `<img src="imagens/fred300.png" alt="">`                 
+        res.innerHTML = `<img src="imagens/fred300.png" alt="">`
+        info.innerHTML = `<p>Nome: Fred Weasley <br> Nascimento: 01/04/1978 <br> Morte: 02/05/1998 <br> Estado sanguíneo: Puro-Sangue <br> Casa: Grifinoria </p>`               
     }
 
     if(camp === fudge) {
-        res.innerHTML = `<img src="imagens/fudge300.png" alt="">`                 
+        res.innerHTML = `<img src="imagens/fudge300.png" alt="">`
+        info.innerHTML = `<p>Nome: Cornélio Oswald <br> Nascimento: Desconhecido <br> Morte: Desconhecido <br> Estado sanguíneo: Puro-Sangue <br> Casa: Corvinal </p>`                 
     }
 
     if(camp === gilderoy) {
-        res.innerHTML = `<img src="imagens/gilderoy300.png" alt="">`                 
+        res.innerHTML = `<img src="imagens/gilderoy300.png" alt="">`
+        info.innerHTML = `<p>Nome: Gilderoy Lockhart <br> Nascimento: 26/01/1964 <br> Estado sanguíneo: Mestiço <br> Casa: Corvinal </p>`                 
     }
 
     if(camp === gina) {
