@@ -210,23 +210,28 @@ function enviar() {
     }
 
     if(camp === grampo) {
-        res.innerHTML = `<img src="imagens/grampo300.png" alt="">`                 
+        res.innerHTML = `<img src="imagens/grampo300.png" alt="">`
+        info.innerHTML = `<p>Nome:  <br> Nascimento: <br> Morte:  <br> Estado sanguíneo:  <br> Casa:  </p>`                 
     }
 
     if(camp === grope) {
-        res.innerHTML = `<img src="imagens/grop300.png" alt="">`                 
+        res.innerHTML = `<img src="imagens/grop300.png" alt="">`
+        info.innerHTML = `<p>Nome:  <br> Nascimento: <br> Morte:  <br> Estado sanguíneo:  <br> Casa:  </p>`                 
     }
 
     if(camp === guida) {
-        res.innerHTML = `<img src="imagens/guida300.png" alt="">`                 
+        res.innerHTML = `<img src="imagens/guida300.png" alt="">`
+        info.innerHTML = `<p>Nome:  <br> Nascimento: <br> Morte:  <br> Estado sanguíneo:  <br> Casa:  </p>`                 
     }
 
     if(camp === hagrid) {
-        res.innerHTML = `<img src="imagens/hagrid300.png" alt="">`                 
+        res.innerHTML = `<img src="imagens/hagrid300.png" alt="">`
+        info.innerHTML = `<p>Nome:  <br> Nascimento: <br> Morte:  <br> Estado sanguíneo:  <br> Casa:  </p>`                 
     }
 
     if(camp === harry) {
-        res.innerHTML = `<img src="imagens/harry300.png" alt="">`                 
+        res.innerHTML = `<img src="imagens/harry300.png" alt="">`
+        info.innerHTML = `<p>Nome:  <br> Nascimento: <br> Morte:  <br> Estado sanguíneo:  <br> Casa:  </p>`                 
     }
 
     if(camp === hermione) {
