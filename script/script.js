@@ -200,11 +200,13 @@ function enviar() {
     }
 
     if(camp === gina) {
-        res.innerHTML = `<img src="imagens/gina300.png" alt="">`                 
+        res.innerHTML = `<img src="imagens/gina300.png" alt="">` 
+        info.innerHTML = `<p>Nome:  <br> Nascimento: <br> Morte:  <br> Estado sanguíneo:  <br> Casa:  </p>`                
     }
 
     if(camp === goily) {
-        res.innerHTML = `<img src="imagens/goily300.png" alt="">`                 
+        res.innerHTML = `<img src="imagens/goily300.png" alt="">`
+        info.innerHTML = `<p>Nome:  <br> Nascimento: <br> Morte:  <br> Estado sanguíneo:  <br> Casa:  </p>`           
     }
 
     if(camp === grampo) {
