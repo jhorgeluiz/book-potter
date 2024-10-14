@@ -235,39 +235,45 @@ function enviar() {
     }
 
     if(camp === hermione) {
-        res.innerHTML = `<img src="imagens/hemione300.png" alt="">`                 
+        res.innerHTML = `<img src="imagens/hemione300.png" alt="">`
+        info.innerHTML = `<p>Nome:  <br> Nascimento: <br> Morte:  <br> Estado sanguíneo:  <br> Casa:  </p>`                 
     }
 
     if(camp === horacio) {
-        res.innerHTML = `<img src="imagens/horacio300.png" alt="">`                 
+        res.innerHTML = `<img src="imagens/horacio300.png" alt="">`
+        info.innerHTML = `<p>Nome:  <br> Nascimento: <br> Morte:  <br> Estado sanguíneo:  <br> Casa:  </p>`                 
     }
 
     if(camp === jorge) {
-        res.innerHTML = `<img src="imagens/jorge300.png" alt="">`                 
+        res.innerHTML = `<img src="imagens/jorge300.png" alt="">`
+        info.innerHTML = `<p>Nome:  <br> Nascimento: <br> Morte:  <br> Estado sanguíneo:  <br> Casa:  </p>`                 
     }
 
     if(camp === lila) {
-        res.innerHTML = `<img src="imagens/lila300.png" alt="">`                 
+        res.innerHTML = `<img src="imagens/lila300.png" alt="">`
+        info.innerHTML = `<p>Nome:  <br> Nascimento: <br> Morte:  <br> Estado sanguíneo:  <br> Casa:  </p>`
     }
 
     if(camp === lilian) {
-        res.innerHTML = `<img src="imagens/lilian300.png" alt="">`                 
+        res.innerHTML = `<img src="imagens/lilian300.png" alt="">`
+        info.innerHTML = `<p>Nome:  <br> Nascimento: <br> Morte:  <br> Estado sanguíneo:  <br> Casa:  </p>`
     }
 
     if(camp === lucio) {
-        res.innerHTML = `<img src="imagens/lucio300.png" alt="">`                 
+        res.innerHTML = `<img src="imagens/lucio300.png" alt="">`
+        info.innerHTML = `<p>Nome:  <br> Nascimento: <br> Morte:  <br> Estado sanguíneo:  <br> Casa:  </p>`
     }
 
     if(camp === luna) {
-        res.innerHTML = `<img src="imagens/luna300.png" alt="">`                 
+        res.innerHTML = `<img src="imagens/luna300.png" alt="">`
     }
 
     if(camp === lupin) {
-        res.innerHTML = `<img src="imagens/lupin300.png" alt="">`                 
+        res.innerHTML = `<img src="imagens/lupin300.png" alt="">`
     }
 
     if(camp === minerva) {
-        res.innerHTML = `<img src="imagens/minerva300.png" alt="">`                 
+        res.innerHTML = `<img src="imagens/minerva300.png" alt="">`
     }
 
     if(camp === molly) {
