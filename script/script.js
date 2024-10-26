@@ -266,10 +266,12 @@ function enviar() {
 
     if(camp === luna) {
         res.innerHTML = `<img src="imagens/luna300.png" alt="">`
+        info.innerHTML = `<p>Nome:  <br> Nascimento: <br> Morte:  <br> Estado sanguíneo:  <br>
     }
 
     if(camp === lupin) {
         res.innerHTML = `<img src="imagens/lupin300.png" alt="">`
+        info.innerHTML = `<p>Nome:  <br> Nascimento: <br> Morte:  <br> Estado sanguíneo:  <br>
     }
 
     if(camp === minerva) {
