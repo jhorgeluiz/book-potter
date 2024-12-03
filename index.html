@@ -1,33 +1,154 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book-potter</title>
-    <link rel="stylesheet" href="estilo/style.css">
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informações dos Personagens</title>
+    <style>
+        @font-face {
+            font-family: 'harry';
+            src: url('./HARRYP__.TTF') format('truetype');
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url(../imagens/fundo3.jpg);
+            background-position: center;
+        }
+
+        main {
+            align-content: center;
+        }
+
+        header {
+            background-color: #740002b9;
+            box-shadow: 1px 2px 5px black;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .tituloh1 {
+            color: yellow;
+            font-family: 'harry';
+            text-align: center;
+            font-size: 40px;
+            padding: 10px;
+        }
+
+        #info {   
+            margin: auto;
+            margin-top: 20px;
+            width: 280px;
+            height: 400px;
+            background-color: black;
+            box-shadow: 1px 1px 5px black;
+            border: 15px solid #740002b9;
+            border-radius: 30px;
+        }
+
+        p {
+            color: yellow;
+            margin: 5px;
+        }
+
+        select {
+            font-family: 'harry';
+            font-size: 20px;
+            background-color: #740002b9;
+            color: antiquewhite;
+            width: 100%;
+            height: 60px;
+            box-shadow: 1px 2px 5px black;
+            border-radius: 5px;
+            border-style: none;
+            color: yellow;
+        }
+
+        img {    
+            border-radius: 15px;
+            width: 280px;
+            height: 300px;
+        }
+
+    </style>
 </head>
 <body>
     
-    <section>
+    <header>
         <h1 class="tituloh1">Catalogo de Personagens</h1>
+    </header>
+    <main>
 
-        <select name="Personagem" id="person">
-            <option value="selecione" id="person">Selecione o Personagem</option>
-            
-            
+        <select id="character-dropdown" id="person">
+            <option value="selecione" id="person">Selecione um personagem...</option>
         </select>
 
-        <input class="enviar" type="button" value="Enviar" onclick="enviar()"> <br>
+        <section class="container_infor">
+            <div id="res">
+                <div id="info"></div>
+            </div>
         
-        <div id="res">
-            
-        </div>
-        <div id="info">
-            
-        </div>
-    </section>
+        </section>
+    </main>
+    <script>
 
-    <script src="script/script.js"></script>
+
+        // Seletores
+        const dropdown = document.getElementById("character-dropdown");
+        const details = document.getElementById("info");
+
+        // Variável para armazenar os personagens
+        let characters = [];
+
+        // Função para preencher o dropdown
+        async function populateDropdown() {
+        try {
+            const response = await fetch("https://hp-api.onrender.com/api/characters");
+            characters = await response.json();
+
+            characters.forEach(character => {
+            const option = document.createElement("option");
+            option.value = character.name; // Usamos o nome como identificador
+            option.textContent = character.name;
+            dropdown.appendChild(option);
+            });
+        } catch (error) {
+            console.error("Erro ao carregar personagens:", error);
+        }
+        }
+
+        // Função para exibir os detalhes do personagem selecionado
+        function showCharacterDetails(selectedName) {
+        const character = characters.find(c => c.name === selectedName);
+
+        if (character) {
+            info.innerHTML = `
+            <img src="${character.image || 'https://via.placeholder.com/300'}" alt="${character.name}">
+            <p><strong>Nome:</strong> ${character.name}</p>
+            <p><strong>Casa:</strong> ${character.house || 'Desconhecida'}</p>
+            <p><strong>Ancestralidade:</strong> ${character.ancestry || 'Desconhecida'}</p>
+            `;
+        } else {
+            details.innerHTML = "<p>Nenhum personagem selecionado.</p>";
+        }
+        }
+
+        // Evento de mudança no dropdown
+        dropdown.addEventListener("change", () => {
+        const selectedName = dropdown.value;
+        if (selectedName) {
+            showCharacterDetails(selectedName);
+        } else {
+            details.innerHTML = "<p>Selecione um personagem para ver os detalhes.</p>";
+        }
+        });
+
+        // Inicializa o dropdown
+        populateDropdown();
+
+    </script>
 </body>
 </html>
