@@ -83,7 +83,7 @@
     <main>
 
         <select id="character-dropdown" id="person">
-            <option value="selecione" id="person">Selecione um personagem...</option>
+            <option value="selecione" id="person">Selecione um personagem</option>
         </select>
 
         <section class="container_infor">
@@ -95,34 +95,24 @@
     </main>
     <script>
 
-
-        // Seletores
-        const dropdown = document.getElementById("character-dropdown");
-        const details = document.getElementById("info");
-
-        // Variável para armazenar os personagens
-        let characters = [];
-
-        // Função para preencher o dropdown
+        const dropdown = document.getElementById("character-dropdown")
+        const details = document.getElementById("info")
+        let characters = []
         async function populateDropdown() {
-        try {
-            const response = await fetch("https://hp-api.onrender.com/api/characters");
-            characters = await response.json();
+
+            const response = await fetch("https://hp-api.onrender.com/api/characters")
+            characters = await response.json()
 
             characters.forEach(character => {
-            const option = document.createElement("option");
-            option.value = character.name; // Usamos o nome como identificador
-            option.textContent = character.name;
-            dropdown.appendChild(option);
-            });
-        } catch (error) {
-            console.error("Erro ao carregar personagens:", error);
-        }
+                const option = document.createElement("option")
+                option.value = character.name
+                option.textContent = character.name
+                dropdown.appendChild(option)
+            })
         }
 
-        // Função para exibir os detalhes do personagem selecionado
         function showCharacterDetails(selectedName) {
-        const character = characters.find(c => c.name === selectedName);
+        const character = characters.find(c => c.name === selectedName)
 
         if (character) {
             info.innerHTML = `
@@ -130,24 +120,22 @@
             <p><strong>Nome:</strong> ${character.name}</p>
             <p><strong>Casa:</strong> ${character.house || 'Desconhecida'}</p>
             <p><strong>Ancestralidade:</strong> ${character.ancestry || 'Desconhecida'}</p>
-            `;
+            `
         } else {
-            details.innerHTML = "<p>Nenhum personagem selecionado.</p>";
+            details.innerHTML = "<p>Nenhum personagem selecionado.</p>"
         }
         }
 
-        // Evento de mudança no dropdown
         dropdown.addEventListener("change", () => {
-        const selectedName = dropdown.value;
-        if (selectedName) {
-            showCharacterDetails(selectedName);
-        } else {
-            details.innerHTML = "<p>Selecione um personagem para ver os detalhes.</p>";
-        }
-        });
+            const selectedName = dropdown.value
+            if (selectedName) {
+                showCharacterDetails(selectedName)
+            } else {
+                details.innerHTML = "<p>Selecione um personagem para ver os detalhes.</p>"
+            }
+        })
 
-        // Inicializa o dropdown
-        populateDropdown();
+        populateDropdown()
 
     </script>
 </body>
