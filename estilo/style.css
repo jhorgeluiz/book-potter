@@ -2,45 +2,33 @@
 
 @font-face {
     font-family: 'harry';
-    src: url('./HARRYP__.TTF') format('truetype');
+    src: url('/HARRYP__.TTF') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
 body{
     background-image: url(../imagens/fundo3.jpg);
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-section{margin: auto;
-    display: block;
-    position: relative;
-    box-shadow: 1px 1px 5px black;
-    width: 350px; 
-    height: 620px;      
-}
-
-#res {   /* resultado */
-    margin-top: 20px;
-    position: relative;
-    left: 25px;
+.res {  
+    margin: auto;
     width: 280px;
-    height: 300px;
+    height: 430px;
     background-color: black;
     box-shadow: 1px 1px 5px black;
     border: 10px solid #740002b9;
     border-radius: 30px;
 }
 
-#info {    /* paragrafo de informações */
-    margin-top: 10px;
-    position: relative;
-    left: 25px;
-    width: 280px;
-    
-    background-color: black;
-    box-shadow: 1px 1px 5px black;
-    border: 10px solid #740002b9;
-}
-p {
+p, h2 {
     color: yellow;
     margin: 5px;
 }
@@ -48,51 +36,53 @@ p {
 .tituloh1 {
     background-color: #740002b9;
     color: yellow;
-    box-shadow: 1px 2px 5px black;
-    border-radius: 5px;
     font-family: 'harry';
     text-align: center;
-    margin-top: 0px;
-    padding: 5px;
+    padding: 10px;
     font-size: 40px;
-    position: relative;
-    top: 10px;
+}
+
+.cont_drop {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
 }
 
 select {
     font-family: 'harry';
-    font-size: 29px;
+    font-size: 25px;
     background-color: #740002b9;
-    color: antiquewhite;
-    margin-left: 25px;
-    width: 225px;
+    width: 250px;
     height: 40px;
     box-shadow: 1px 2px 5px black;
     border-radius: 5px;
     border-style: none;
     color: yellow;
+    margin-bottom: 20px;
 }
 
 .enviar{
     background-color: #740002b9;
     color: yellow;
     font-family: 'harry';
-    font-size: 20px;
-    margin-left: 8px;
-    width: 65px;
+    font-size: 30px;
+    width: 80px;
     height: 40px;
     box-shadow: 1px 2px 5px black;
     border-style: none;
     border-radius: 5px;
-    position: relative;
-    bottom: 3px;
+    margin-left: 10px;
+
 }
 .enviar:active {
     background-color: #310606b9;
 }
 
 img {    /* todas */
-    border-radius: 15px;
-    width: 280px;
-    height: 300px;
+    width: 240px;
+    height: 240px;
+    margin-top: 10px;
 }
+
+
+
