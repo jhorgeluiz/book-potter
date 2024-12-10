@@ -60,54 +60,54 @@
                 house: "",
                 image: "/imagens/argo300.png"
             }
-        ];
+        ]
 
 
         function carregarDropdown() {
-            const dropdown = document.getElementById("dropdown");
+            const dropdown = document.getElementById("dropdown")
             characters.forEach(character => {
-                const option = document.createElement("option");
-                option.value = character.id;
-                option.textContent = character.name;
-                dropdown.appendChild(option);
-            });
+                const option = document.createElement("option")
+                option.value = character.id
+                option.textContent = character.name
+                dropdown.appendChild(option)
+            })
         }
 
 
         function buscarPersonagem() {
-            const dropdown = document.getElementById("dropdown");
-            const personagemSelecionado = dropdown.value;
+            const dropdown = document.getElementById("dropdown")
+            const personagemSelecionado = dropdown.value
 
-            const resultadoDiv = document.getElementById("resultado");
-            const nome = document.getElementById("nome");
-            const nascimento = document.getElementById("nascimento");
-            const morte = document.getElementById("morte");
-            const estadoSanguineo = document.getElementById("estadoSanguineo");
-            const casa = document.getElementById("casa");
-            const imagem = document.getElementById("imagem");
+            const resultadoDiv = document.getElementById("resultado")
+            const nome = document.getElementById("nome")
+            const nascimento = document.getElementById("nascimento")
+            const morte = document.getElementById("morte")
+            const estadoSanguineo = document.getElementById("estadoSanguineo")
+            const casa = document.getElementById("casa")
+            const imagem = document.getElementById("imagem")
 
             if (!personagemSelecionado) {
-                alert("Por favor, selecione um personagem.");
+                alert("Por favor, selecione um personagem.")
                 return;
             }
 
-            const personagem = characters.find(char => char.id === personagemSelecionado);
+            const personagem = characters.find(char => char.id === personagemSelecionado)
 
 
-            nome.textContent = personagem.name;
-            nascimento.textContent = personagem.birthDate || "Não informado";
-            morte.textContent = personagem.deathDate || "Não informado";
-            estadoSanguineo.textContent = personagem.bloodStatus || "Não informado";
-            casa.textContent = personagem.house || "Não informado";
-            imagem.src = personagem.image;
-            imagem.alt = `Imagem de ${personagem.name}`;
+            nome.textContent = personagem.name
+            nascimento.textContent = personagem.birthDate || "Não informado"
+            morte.textContent = personagem.deathDate || "Não informado"
+            estadoSanguineo.textContent = personagem.bloodStatus || "Não informado"
+            casa.textContent = personagem.house || "Não informado"
+            imagem.src = personagem.image
+            imagem.alt = `Imagem de ${personagem.name}`
 
             // Mostra o resultado
-            resultadoDiv.style.display = "block";
+            resultadoDiv.style.display = "block"
         }
 
         // Inicializar o dropdown ao carregar a página
-        document.addEventListener("DOMContentLoaded", carregarDropdown);
+        document.addEventListener("DOMContentLoaded", carregarDropdown)
     </script>
 </body>
 </html>
