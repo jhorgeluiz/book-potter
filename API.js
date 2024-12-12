@@ -152,5 +152,23 @@ const characteres = [
         estadosaguineo: "",
         casa: "",
         imagem: "./imagens/300.png"
+    },
+    {
+        id: "",
+        nome: "",
+        nascimento: "",
+        morte: "",
+        estadosaguineo: "",
+        casa: "",
+        imagem: "./imagens/300.png"
+    },
+    {
+        id: "",
+        nome: "",
+        nascimento: "",
+        morte: "",
+        estadosaguineo: "",
+        casa: "",
+        imagem: "./imagens/300.png"
     }
 ]
